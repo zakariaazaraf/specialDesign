@@ -1,0 +1,220 @@
+:root {
+    --main-color:#808080;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+        font-family: 'Open Sans', sans-serif;
+}
+
+/* Starting settings style*/
+.settings-box {
+    position: fixed;
+    left:-200px;
+    top:0;
+    height: 100vh;
+    width: 200px;
+    z-index: 100;
+    background: #fff;
+    transition: .7s;
+}
+
+.settings-box.open{
+    left: 0px;
+}
+
+.settings-box .icon-container{
+    position: absolute;
+    right: -30px;
+    top: 70px;
+    background: white;
+    cursor:pointer;
+}
+
+.settings-box .icon{
+    padding:6px;
+    font-size:22px;
+}
+
+/* End settings style*/
+
+
+/* Start styling the box color */
+
+.settings-box .settings-containers .colors-box {   
+    padding: 7px;
+    background-color: #e2dcdc;
+    margin: 6px;
+    text-align: center;
+}
+
+.settings-box .settings-containers .colors-box h3 {
+    margin:0;
+    color:#666;
+}
+
+.settings-box .settings-containers .colors-box .colors-list {
+    list-style:none;
+    text-align:center;
+    padding:0
+}
+
+.settings-box .settings-containers .colors-box .colors-list li {
+    display:inline-block;
+    width:25px;
+    height:25px;
+    background-color: #333;
+    cursor:pointer;
+    border-radius:20%
+}
+
+.settings-box .settings-containers .colors-box .colors-list li.active {
+    border : 2px solid ;
+}
+
+.settings-box .settings-containers .option-box{
+    padding: 7px;
+    background-color: #e2dcdc;
+    margin: 6px;
+    text-align: center;
+}
+
+.settings-box .settings-containers .option-box h3{
+    font-size: 16px;
+    margin: 10px auto;
+}
+.settings-box .settings-containers .option-box .yes,
+.settings-box .settings-containers .option-box .no {
+
+    width:50px;
+    background-color:#009688;
+    color:#FFF;
+    display:inline-block;
+    opacity:.5;
+    border-radius:4px;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+.settings-box .settings-containers .option-box .random-background span.active {  
+    opacity: 1;
+}
+
+/* Start styling each li color */
+
+.settings-box .settings-containers .colors-box .colors-list li:first-child {
+    background-color: #808080;
+}
+
+.settings-box .settings-containers .colors-box .colors-list li:nth-child(2){
+    background-color: greenyellow;
+}
+
+.settings-box .settings-containers .colors-box .colors-list li:nth-child(3){
+    background-color: #E91E63
+}
+
+.settings-box .settings-containers .colors-box .colors-list li:nth-child(4){
+    background-color: #009688
+}
+
+.settings-box .settings-containers .colors-box .colors-list li:nth-child(5){
+    background-color: #03A9F4
+}
+/* Start styling each li color */
+
+/* End styling the box color */
+
+/* start landing page */
+.landing-page {
+    min-height: 100vh;
+    background-image: url(../Images/beautifulGirl1.jpg);
+    background-size: cover;
+    position: relative;
+    transition: all 2s ease; 
+    
+}
+
+.landing-page .overly{
+    background-color: rgba(0, 0, 0, 0.6);
+    height:100%;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+}
+
+.landing-page .header-area{
+    position:relative;
+    display:flex;
+    color:rgb(255, 255, 255);
+    z-index:2;
+    padding:5px;
+}
+
+.landing-page .header-area .logo{
+    width:300px;
+    padding:15px;
+    font-weight:bold;
+}
+
+.landing-page .header-area .links{
+    list-style:none;
+    width:100%;
+    text-align:right;
+    padding-left:0px;
+    padding-right:20px
+}
+
+.landing-page .header-area .links li{
+    display:inline-block;
+    margin-left:10px;
+}
+
+
+.landing-page .header-area .links a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: .3s;
+}
+
+
+.landing-page .header-area .links li a.active,
+.landing-page .header-area .links li a:hover{
+    color: var(--main-color);
+    cursor:pointer;
+}
+
+
+.landing-page .introduction-text {
+    position:absolute;
+    z-index:2;
+    color:rgb(255, 255, 255);
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    text-align:center;
+}
+
+.landing-page .introduction-text h1{
+    font-size:39px;
+    margin:0px;
+}
+
+.landing-page .introduction-text span{
+    color: var(--main-color);
+}
+
+.landing-page .introduction-text p{
+    line-height: 23px;
+    margin: 10px;
+}
+
+
+
+/* End landing page */
